@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-i{
+i {
   pointer-events: none;
 }
 
@@ -88,26 +88,43 @@ section {
       background-color: indianred;
     }
   }
-  .done{
+  .done {
     opacity: 0.5;
     text-decoration: line-through;
     text-decoration-thickness: 1px;
   }
 }
 
-@keyframes scaleUp {
-  from{
-    transform: scale(0);
-  }to{
-    transform: scale(1);
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+
+  button {
+    cursor: pointer;
+    background-color: rgb(0, 146, 114);
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
   }
-  
 }
 
-@keyframes scaleDone{
-  from{
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
     transform: scale(1);
-  }to{
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
     transform: scale(0);
   }
 }
